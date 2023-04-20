@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/blog-library/',
+  base: '/',
   title: 'blog and library',
   description: 'a simple personal blog and library',
   srcDir: './src',
