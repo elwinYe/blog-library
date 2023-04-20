@@ -3,7 +3,8 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: 'blog and library',
-  description: '博客与知识库',
+  description: 'a simple personal blog and library',
+  srcDir: './src',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -13,14 +14,14 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: 'Examples',
+        text: '示例',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Markdown示例', link: '/markdown-examples' },
+          { text: '运行时API示例', link: '/api-examples' }
         ]
       }
     ],
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/vuejs/vitepress' }]
+    socialLinks: [{ icon: 'github', link: 'https://github.com/elwinYe/blog-library' }]
   }
 })
