@@ -8,18 +8,20 @@ hero:
   tagline: Make epic shit
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Let's Get It !
+      link: /begin
     - theme: alt
       text: API Examples
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Components
+    details: 整合各类实用组件
+  - title: Summary
+    details: 日常工作内容总结
+  - title: Course
+    details: 技术学习
+  - title: Fragment
+    details: 生活遇到中的琐碎事项
 ---
 
