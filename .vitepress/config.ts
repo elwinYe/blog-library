@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/blog-library/',
   title: 'blog and library',
   description: 'a simple personal blog and library',
   srcDir: './src',
@@ -23,5 +24,8 @@ export default defineConfig({
     ],
 
     socialLinks: [{ icon: 'github', link: 'https://github.com/elwinYe/blog-library' }]
-  }
+  },
+
+  // 路由重写
+  rewrites: {}
 })
