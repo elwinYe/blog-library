@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/blog-library/',
+  base: '/',
   title: 'blog and library',
   description: 'a simple personal blog and library',
   srcDir: './src',
@@ -15,10 +15,36 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: '示例',
+        text: '组件库📦',
+        items: [{ text: 'Vue', items: [] }]
+      },
+      {
+        text: '工具库🔧',
+        items: []
+      },
+      {
+        text: '知识库📚',
         items: [
-          { text: 'Markdown示例', link: '/markdown-examples' },
-          { text: '运行时API示例', link: '/api-examples' }
+          {
+            text: '前端📊',
+            items: []
+          },
+          {
+            text: 'Go Lang'
+          },
+          {
+            text: '服务器💾',
+            items: []
+          }
+        ]
+      },
+      {
+        text: '生活琐碎☕',
+        items: [
+          {
+            text: 'oculus quest',
+            items: [{ text: 'oculus quest 2 激活', link: '/fragment/quest2-activation' }]
+          }
         ]
       }
     ],
