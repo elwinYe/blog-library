@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "blog and library"
   text: "博客与知识库"
-  tagline: Make epic shit
+  tagline: Make Web Front Grate Again !
   actions:
     - theme: brand
       text: Let's Get It !
