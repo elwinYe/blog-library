@@ -15,13 +15,17 @@ hero:
       link: /api-examples
 
 features:
-  - title: Components
+  - icon: ☸️
+    title: Components
     details: 整合各类实用组件
-  - title: Summary
+  - icon: 🖊️
+    title: Summary
     details: 日常工作内容总结
-  - title: Course
+  - icon: 📚
+    title: Course
     details: 技术学习
-  - title: Fragment
+  - icon: ☕  
+    title: Fragment
     details: 生活遇到中的琐碎事项
 ---
 
