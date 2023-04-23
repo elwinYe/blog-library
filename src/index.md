@@ -16,7 +16,6 @@ hero:
 
 features:
   - title: Components
-    # titleImg:
     details: 整合各类实用组件
   - title: Summary
     details: 日常工作内容总结

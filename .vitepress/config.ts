@@ -37,7 +37,16 @@ export default defineConfig({
         items: [
           {
             text: '前端📊',
-            items: []
+            items: [
+              {
+                text: '面试题(持续补充)',
+                link: '/library/FE/interview'
+              },
+              {
+                text: '项目首屏加载速度优化方案',
+                link: '/library/FE/first-load-optimization/index'
+              }
+            ]
           },
           {
             text: 'Go Lang'
@@ -63,5 +72,7 @@ export default defineConfig({
   },
 
   // 路由重写
-  rewrites: {}
+  rewrites: {
+    '/library/FE/项目首屏加载速度优化方案.md': '/library/FE/first-load-optimization.md'
+  }
 })
