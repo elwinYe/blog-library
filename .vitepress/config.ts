@@ -44,7 +44,7 @@ export default defineConfig({
               },
               {
                 text: '项目首屏加载速度优化方案',
-                link: '/library/FE/first-load-optimization/index'
+                link: '/library/FE/first-load-optimization'
               }
             ]
           },
@@ -73,6 +73,6 @@ export default defineConfig({
 
   // 路由重写
   rewrites: {
-    '/library/FE/项目首屏加载速度优化方案.md': '/library/FE/first-load-optimization.md'
+    'library/FE/项目首屏加载速度优化方案.md': 'library/FE/first-load-optimization.md'
   }
 })
