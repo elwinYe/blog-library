@@ -8,12 +8,22 @@ export default defineConfig({
   srcDir: './src',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
+    nav: [{ text: 'Home', link: '/' }],
 
     sidebar: [
+      {
+        text: '工作总结',
+        items: [
+          {
+            text: 'bugs',
+            link: '/summary/bugs/index'
+          },
+          {
+            text: '包缺陷',
+            link: '/summary/defects/index'
+          }
+        ]
+      },
       {
         text: '组件库📦',
         items: [{ text: 'Vue', items: [] }]
