@@ -5,17 +5,49 @@
 ```vue
 <template>
   <Select
-    v-model:value="xxx"
-    placeholder="请选择"
+    style="width: 200px"
+    v-model:value="demo"
     label-in-value
-    :options="options"
-  />
+    placeholder="请选择游戏"
+    @change="handleChange"
+  >
+    <SelectOption v-for="item in options" :key="item.key" :value="item.value">{{
+      item.label
+    }}</SelectOption>
+  </Select>
 </template>
 
 <script setup>
   import { cloneDeep } from 'lodash'
-  const cloneX = cloneDeep(xxx) // 控制台抛出警告如下
-  // avoid app logic that relies on enumerating keys on a component instance. The keys will be empty in production mode to avoid performance overhead
+  import { Select, SelectOption } from 'ant-design-vue'
+  import 'ant-design-vue/dist/antd.css'
+
+  const options = [
+    {
+      class: 'custom',
+      disabled: false,
+      key: '01',
+      label: '战神4',
+      value: 1
+    },
+    {
+      class: 'custom',
+      disabled: false,
+      key: '02',
+      label: '荒野大镖客2',
+      value: 2
+    }
+  ]
+  const demo = ref(undefined)
+  const handleChange = val => {
+    console.log('val', val)
+    // val中的label是一个复杂的对象数组, 对这类对象做深拷贝的情况下, 
+    // Vue会警告不必要的性能开销(因为实际有用的也就那么几个属性)
+    // const res = cloneDeep(demo.value)
+    // avoid app logic that relies on enumerating keys on a component instance. 
+    // The keys will be empty in production mode to avoid performance overhead
+    // console.log('res', res)
+  }
 </script>
 ```
 
